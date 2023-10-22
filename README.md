@@ -2,7 +2,7 @@
 
 This is a Wordpress theme for my own website.
 
-https://janhindemit.de/
+[My Page](https://janhindemit.de/)
 
 ![App Screenshot](./Screenshot.png)
 
