@@ -30,6 +30,7 @@ tailwind.config = {
                 "bounce-slow": "bounce 3s linear infinite",
                 "spin-slow": "spin 4s linear infinite",
                 emojiThumbsUpAnimation: "emojiThumbsUpAnimation 2s infinite",
+      rotate: "rotate 2s infinite",
             },
             keyframes: {
                 emojiThumbsUpAnimation: {
@@ -40,6 +41,11 @@ tailwind.config = {
                         transform: "translate(-5px, -54px) rotate(-15deg)"
                     },
                 },
+      			rotate: {
+                "0%": { transform: "rotate(3deg)" },
+                "50%": { transform: "rotate(-3deg)" },
+                "100%": { transform: "rotate(3deg)" },
+              },
             },
             dropShadow: {
                 mainPageText: "0px 0px 100px rgba(127, 125, 121, 0.16)",

@@ -13,6 +13,16 @@ module.exports = {
       },
     },
     extend: {
+       keyframes: {
+              rotate: {
+                "0%": { transform: "rotate(1deg)" },
+                "50%": { transform: "rotate(-1deg)" },
+                "100%": { transform: "rotate(1deg)" },
+              },
+      },
+      animation: {
+				rotate: "rotate 2s infinite",
+			},
       colors: tailpress.colorMapper(tailpress.theme("settings.color.palette", theme)),
       fontSize: tailpress.fontSizeMapper(tailpress.theme("settings.typography.fontSizes", theme)),
     },

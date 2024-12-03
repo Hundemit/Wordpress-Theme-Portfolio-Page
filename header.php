@@ -86,16 +86,16 @@
                             </a>
                             <a onclick="switchMenu()"
                                 class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText decoration-red duration-500 transition-all font-bold"
-                                href="<?php echo home_url(); ?>/myprojects">My Work.<div
+                                href="<?php echo home_url(); ?>/myprojects">Projekte.<div
                                     class="h-[4px] w-full bg-color2 rounded-xl"></div>
                             </a>
                             <a onclick=" switchMenu()"
                                 class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText decoration-red duration-500 transition-all font-bold"
-                                href="#Consulting">My Service. <div class="h-[4px] w-full bg-color3 rounded-xl"></div>
+                                href="#EmailMe">Kontakt. <div class="h-[4px] w-full bg-color3 rounded-xl"></div>
                             </a>
                             <a onclick="switchMenu()"
                                 class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText decoration-red duration-500 transition-all font-bold"
-                                href="#AboutMe">About Me. <div class="h-[4px] w-full bg-color4 rounded-xl"></div>
+                                href="#AboutMe">Über mich. <div class="h-[4px] w-full bg-color4 rounded-xl"></div>
                             </a>
                         </div>
                         <div class="text-xl flex flex-col gap-2">

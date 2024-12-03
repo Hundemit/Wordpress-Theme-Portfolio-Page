@@ -78,26 +78,23 @@
                     </div>
                     <div
                         class="dark:bg-darkLight bg-lightLight h-full mb-5 p-5 mt-16 rounded-xl sm:gap-24 w-full box-border sm:p-0 sm:shadow-none sm:mt-0 duration-200 flex flex-col shadow-2xl justify-between">
-                        <div class="gap-5 flex flex-col text-xl">
+                                               <div class="gap-5 flex flex-col text-xl">
                             <a onclick="switchMenu()"
                                 class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText decoration-red duration-500 transition-all font-bold"
-                                href="<?php echo home_url(); ?>">Home.<div class="h-[4px] w-full bg-color1 rounded-xl">
-                                </div>
+                                href="<?php echo home_url(); ?>#firstPage">Home. <div class="h-[4px] w-full bg-color1 rounded-xl"></div>
                             </a>
                             <a onclick="switchMenu()"
                                 class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText decoration-red duration-500 transition-all font-bold"
-                                href="<?php echo home_url(); ?>/myprojects">My Work.<div
+                                href="<?php echo home_url(); ?>/myprojects">Projekte.<div
                                     class="h-[4px] w-full bg-color2 rounded-xl"></div>
                             </a>
                             <a onclick=" switchMenu()"
                                 class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText decoration-red duration-500 transition-all font-bold"
-                                href="<?php echo home_url(); ?>/#Consulting">My Service.<div
-                                    class="h-[4px] w-full bg-color3 rounded-xl"></div>
+                                href="<?php echo home_url(); ?>#EmailMe">Kontakt. <div class="h-[4px] w-full bg-color3 rounded-xl"></div>
                             </a>
                             <a onclick="switchMenu()"
                                 class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText decoration-red duration-500 transition-all font-bold"
-                                href="<?php echo home_url(); ?>/#AboutMe">About Me.<div
-                                    class="h-[4px] w-full bg-color4 rounded-xl"></div>
+                                href="<?php echo home_url(); ?>#AboutMe">Über mich. <div class="h-[4px] w-full bg-color4 rounded-xl"></div>
                             </a>
                         </div>
                         <div class="text-xl flex flex-col gap-2">

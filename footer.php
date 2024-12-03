@@ -8,17 +8,17 @@
                 href="#firstPage">Home. <div class="h-[4px] w-full dark:bg-color1 rounded-xl"></div>
             </a>
             <a class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText duration-500 transition-all text-center"
-                href="#Consulting">My Service. <div class="h-[4px] w-full dark:bg-color2 rounded-xl">
+                href=" <?php echo home_url(); ?>/myprojects">Projekte.<div
+                    class="h-[4px] w-full dark:bg-color2 rounded-xl">
                 </div>
             </a>
         </div>
         <div class=" flex gap-5">
             <a class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText duration-500 transition-all text-center"
-                href="<?php echo home_url(); ?>/myprojects">My Work. <div
-                    class="h-[4px] w-full dark:bg-color3 rounded-xl"></div>
+                href="#EmailMe">Kontakt. <div class="h-[4px] w-full dark:bg-color3 rounded-xl"></div>
             </a>
             <a class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText duration-500 transition-all text-center"
-                href="#AboutMe">About Me. <div class="h-[4px] w-full dark:bg-color4 rounded-xl"></div>
+                href="#AboutMe">Über mich. <div class="h-[4px] w-full dark:bg-color4 rounded-xl"></div>
             </a>
         </div>
     </div>
@@ -36,7 +36,7 @@
                 <img class="h-[20px] duration-700 hover:rotate-12 hover:scale-110"
                     src="<?php echo get_bloginfo('template_url') ?>/Assests/picture/logo/Facebook.svg" alt="" />
             </a>
-            <a href="https://discord.gg/ad5GhhdJ"
+            <a href="https://discord.com/users/569169655315562498"
                 class="h-14 w-full hover:bg-darkLight flex justify-center items-center duration-700 rounded-md">
                 <img class="h-[20px] duration-700 hover:rotate-12 hover:scale-110"
                     src="<?php echo get_bloginfo('template_url') ?>/Assests/picture/logo/discord-logo.svg" alt="" />
@@ -64,6 +64,7 @@
         </div>
     </div>
 </footer>
-<script src="./script.js"></script> <?php wp_footer(); ?> </body>
+<!-- <script src="./script.js"></script>  -->
+<?php wp_footer(); ?> </body>
 
 </html>

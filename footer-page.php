@@ -5,21 +5,22 @@
         class="gap-5 flex flex-col sm:flex-row items-center justify-center py-5 w-full text-xl dark:bg-dark bg-light rounded-lg font-bold">
         <div class=" flex gap-5">
             <a class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText duration-500 transition-all text-center"
-                href="<?php echo home_url(); ?>">Home. <div class="h-[4px] w-full dark:bg-color1 rounded-xl"></div>
+                href="<?php echo home_url(); ?>#firstPage">Home. <div class="h-[4px] w-full dark:bg-color1 rounded-xl">
+                </div>
             </a>
             <a class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText duration-500 transition-all text-center"
-                href="<?php echo home_url(); ?>#Consulting">My Service. <div
+                href=" <?php echo home_url(); ?>/myprojects">Projekte.<div
                     class="h-[4px] w-full dark:bg-color2 rounded-xl">
                 </div>
             </a>
         </div>
         <div class=" flex gap-5">
             <a class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText duration-500 transition-all text-center"
-                href="<?php echo home_url(); ?>/myprojects">My Work. <div
+                href=" <?php echo home_url(); ?>#EmailMe">Kontakt. <div
                     class="h-[4px] w-full dark:bg-color3 rounded-xl"></div>
             </a>
             <a class="menuContainerListLink w-[130px] hover:w-[150px] dark:text-darkText text-lightText duration-500 transition-all text-center"
-                href="<?php echo home_url(); ?>#AboutMe">About Me. <div
+                href=" <?php echo home_url(); ?>#AboutMe">Über mich. <div
                     class="h-[4px] w-full dark:bg-color4 rounded-xl"></div>
             </a>
         </div>
@@ -66,6 +67,7 @@
         </div>
     </div>
 </footer>
-<script src="./script.js"></script> <?php wp_footer(); ?> </body>
+<!-- <script src="./script.js"></script> -->
+<?php wp_footer(); ?> </body>
 
 </html>

@@ -11,13 +11,13 @@
                 <?php the_title(); ?>
         </div>
         <!-- Text -->
-        <p class="text-white font-medium opacity-80 text-xl mx-auto"> <?php get_first_text_paragraph(get_the_ID()); ?>
+        <p class="text-white  opacity-80 text-xl mx-auto"> <?php get_first_text_paragraph(get_the_ID()); ?>
         </p>
         <!-- Author -->
-        <div class="flex justify-between mt-5"> 
+        <div class="flex flex-wrap gap-y-4 justify-between mt-5"> 
         	<div class="flex gap-4">
-            <img src="<?php echo get_bloginfo('template_url') ?>/Assests/picture/aboutMe/meCrop.png" alt=""
-                class="w-[50px] rounded hover:rotate-12 duration-700" />
+            <img src="https://janhindemit.de/wp-content/uploads/2024/09/MEBLACK-mini.png" alt=""
+                class="w-[50px] rounded hover:rotate-12 duration-700 object-cover	" />
             <div>
                 <p class="text-white text-base font-bold">Jan Hindemit</p>
                 <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished"
@@ -26,8 +26,8 @@
         	</div>
          <?php
 							if (is_exists_link_button(get_the_ID())) {
-    					echo ' <a class="flex gap-2 bg-darkContainer rounded-xl px-10 items-center duration-200 hover:-translate-y-2" target="_blanket" href="' . get_link_from_button(get_the_ID()) . '" >
-          		<p class="text-white text-base font-bold">Link</p>
+    					echo ' <a class="min-h-12 animate-bounce flex gap-2 bg-darkContainer rounded-xl px-5 sm:px-10 items-center duration-200 hover:-translate-y-2" target="_blanket" href="' . get_link_from_button(get_the_ID()) . '" >
+          		<p class="text-white text-sm sm:text-base font-bold">Link</p>
           		<img class="h-[15px]" src="' . get_bloginfo('template_url') . '/Assests/picture/logo/ArrowUpRifght.png" alt="" />
           		</a>';
 							}
@@ -42,9 +42,9 @@
         </div>
     </section>
     <!-- BLOG TEXT -->
-    <section id="blogText" class="mt-[24vh] font-medium"> <?php
+    <section id="blogText" class="mt-[24vh] "> <?php
 
     get_blog_text(get_the_ID());
 
     ?> </section>
-</article> <?php get_footer(); ?>
+</article>  <?php get_footer("page"); ?>

@@ -2,7 +2,7 @@
 Theme Name: Portfolio Page
 Author: Jan Hindemit
 Author URI: https://janhindemit.de
-Version: 1.0
+Version: 1.1
 */
 
 #Blog-Subcategory {
@@ -17,7 +17,9 @@ Version: 1.0
   background: #151515;
   border: 2px dashed #4f4f4f;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px ;
+    padding-bottom: 0px ;
+
 }
 
 #Info-Banner h2 {
@@ -41,6 +43,16 @@ Version: 1.0
 @font-face {
   font-family: SALongBeach;
   src: url(./Assests/font/SALongBeach.otf);
+}
+
+@font-face {
+  font-family: GeneralSans;
+  src: url(./Assests/font/GeneralSans-Medium.otf);
+}
+
+@font-face {
+  font-family: Tanker;
+  src: url(./Assests/font/Tanker-Regular.otf);
 }
 
 @font-face {
@@ -110,6 +122,14 @@ header {
 
 .longBeach {
   font-family: SALongBeach !important;
+}
+
+.tanker {
+  font-family: Tanker !important;
+}
+
+.generalSans {
+  font-family: GeneralSans !important;
 }
 
 .titleFont {
@@ -265,32 +285,248 @@ header {
 /* -------------------------- */
 /* -------------------------- */
 
-/* @keyframes changeTwo {
+@keyframes changeTwo {
+  /* UX IX DESIGNER */
   0%,
+  3.125% {
+    transform: translate3d(0, 0%, 0);
+  }
+
+  /* +2 */
+  6.25% {
+    transform: translate3d(0, 2%, 0);
+  }
+
+  /* -2 */
+  9.375% {
+    transform: translate3d(0, -22%, 0);
+  }
+  /* TEAMPLAYER */
   12.5%,
-  87.5%,
-  100% {
-    transform: translate3d(0, 0, 0);
+  15.625% {
+    transform: translate3d(0, -20%, 0);
+  }
+  /* +2 */
+  18.75% {
+    transform: translate3d(0, -18%, 0);
   }
 
-  17.5% {
-    transform: translate3d(0, 5%, 0);
+  /* -2 */
+  21.875% {
+    transform: translate3d(0, -42%, 0);
   }
 
+  /* Software */
   25%,
-  37.5%,
-  75%,
-  87.5% {
-    transform: translate3d(0, -33%, 0);
+  28.125% {
+    transform: translate3d(0, -40%, 0);
   }
 
+  /* -2 */
+  31.25% {
+    transform: translate3d(0, -38%, 0);
+  }
+
+  /* +2 */
+
+  34.375% {
+    transform: translate3d(0, -62%, 0);
+  }
+
+  /* Problemlöser */
+  37.5%,
+  40.625% {
+    transform: translate3d(0, -60%, 0);
+  }
+
+  /* -2 */
+  43.75% {
+    transform: translate3d(0, -58%, 0);
+  }
+
+  /* +2 */
+  46.875% {
+    transform: translate3d(0, -82%, 0);
+  }
+
+  /* Kreativ */
   50%,
+  53.125% {
+    transform: translate3d(0, -80%, 0);
+  }
+
+  /* -2 */
+  56.25% {
+    transform: translate3d(0, -82%, 0);
+  }
+
+  /* +2 */
+  59.375% {
+    transform: translate3d(0, -58%, 0);
+  }
+
+  /* Problemloser */
+  62.5%,
+  65.625% {
+    transform: translate3d(0, -60%, 0);
+  }
+
+  /* -2 */
+  68.75% {
+    transform: translate3d(0, -62%, 0);
+  }
+
+  /* +2 */
+  71.875% {
+    transform: translate3d(0, -38%, 0);
+  }
+
+  /* Software */
+  75%,
+  78.125% {
+    transform: translate3d(0, -40%, 0);
+  }
+
+  /* -2 */
+  81.25% {
+    transform: translate3d(0, -42%, 0);
+  }
+
+  /* +2 */
+  84.375% {
+    transform: translate3d(0, -18%, 0);
+  }
+
+  /* Teamplayer */
+  87.5%,
+  90.625% {
+    transform: translate3d(0, -20%, 0);
+  }
+
+  /* -2 */
+  93.75% {
+    transform: translate3d(0, -22%, 0);
+  }
+
+  /* +2 */
+  96.875% {
+    transform: translate3d(0, 2%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+/* @keyframes changeTw {
+  0% {
+    transform: translate3d(0, 0%, 0);
+  }
+
+  6.25% {
+    transform: translate3d(0, 2%, 0);
+  }
+
+  12.5% {
+    transform: translate3d(0, -19%, 0);
+  }
+
+  18.75% {
+    transform: translate3d(0, -17%, 0);
+  }
+
+  25% {
+    transform: translate3d(0, -39%, 0);
+  }
+
+  31.25% {
+    transform: translate3d(0, -37%, 0);
+  }
+
+  37.5% {
+    transform: translate3d(0, -58%, 0);
+  }
+
+  43.75% {
+    transform: translate3d(0, -56%, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -78%, 0);
+  }
+
+  56.25% {
+    transform: translate3d(0, -80%, 0);
+  }
+
   62.5% {
-    transform: translate3d(0, -66%, 0);
+    transform: translate3d(0, -58%, 0);
+  }
+
+  68.75% {
+    transform: translate3d(0, -60%, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -39%, 0);
+  }
+
+  81.25% {
+    transform: translate3d(0, -41%, 0);
+  }
+
+  87.5% {
+    transform: translate3d(0, -19%, 0);
+  }
+
+  93.75% {
+    transform: translate3d(0, -21%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0%, 0);
   }
 } */
 
-@keyframes changeTwo {
+/* @keyframes changeTwo {
+  0% {
+    transform: translate3d(0, 0%, 0);
+  }
+
+  12.5% {
+    transform: translate3d(0, -19%, 0);
+  }
+
+  25% {
+    transform: translate3d(0, -39%, 0);
+  }
+
+  37.5% {
+    transform: translate3d(0, -58%, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -78%, 0);
+  }
+
+  62.5% {
+    transform: translate3d(0, -58%, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -39%, 0);
+  }
+
+  87.5% {
+    transform: translate3d(0, -19%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
+} */
+
+/* @keyframes changeTwo {
   0%,
   12.5%,
   100% {
@@ -337,7 +573,7 @@ header {
   92.5% {
     transform: translate3d(0, -35%, 0);
   }
-}
+} */
 
 .projectCard {
   max-width: 340px;
@@ -442,89 +678,59 @@ header {
 
 .einsTextButton div {
   animation-name: einsTextButtonGardient;
-  animation-duration: 12s;
+  animation-duration: 22s;
   animation-iteration-count: infinite;
 }
 
+/* blau rot gelb weiß grün */
+
 @keyframes einsTextButtonGardient {
-  0% {
+  0%,
+  6.25% {
     background-color: #a498e2;
     box-shadow: 0px 0px 30px rgba(164, 152, 226, 0.2);
   }
 
-  12.5% {
-    background-color: #a498e2;
-    box-shadow: 0px 0px 30px rgba(164, 152, 226, 0.2);
+  12.5%,
+  18.75% {
+    background-color: #e29898;
+    box-shadow: 0px 0px 30px rgba(226, 152, 152, 0.2);
   }
 
-  17.5% {
-    background-color: #a498e2;
-    box-shadow: 0px 0px 30px rgba(164, 152, 226, 0.2);
-  }
-
-  23% {
-    background-color: #94d894;
-    box-shadow: 0px 0px 30px rgba(148, 216, 148, 0.2);
-  }
-
-  25% {
-    background-color: #94d894;
-    box-shadow: 0px 0px 30px rgba(148, 216, 148, 0.2);
-  }
-
-  37.5% {
-    background-color: #94d894;
-    box-shadow: 0px 0px 30px rgba(148, 216, 148, 0.2);
-  }
-
-  42.5% {
-    background-color: #94d894;
-    box-shadow: 0px 0px 30px rgba(148, 216, 148, 0.2);
-  }
-
-  48% {
+  25%,
+  31.25% {
     background-color: #e2e298;
     box-shadow: 0px 0px 30px rgba(226, 226, 152, 0.2);
   }
 
-  50% {
+  37.5%,
+  43.75% {
+    background-color: #E2BC98;
+    box-shadow: 0px 0px 30px rgba(226, 188, 152, 0.2);
+  }
+
+  50%,
+  56.25% {
+    background-color: #98e2a4;
+    box-shadow: 0px 0px 30px rgba(152, 226, 164, 0.2);
+  }
+
+  62.5%,
+  68.75% {
+    background-color: #E2BC98;
+    box-shadow: 0px 0px 30px rgba(226, 188, 152 , 0.2);
+  }
+
+  75%,
+  81.25% {
     background-color: #e2e298;
     box-shadow: 0px 0px 30px rgba(226, 226, 152, 0.2);
   }
 
-  62.5% {
-    background-color: #e2e298;
-    box-shadow: 0px 0px 30px rgba(226, 226, 152, 0.2);
-  }
-
-  67.5% {
-    background-color: #e2e298;
-    box-shadow: 0px 0px 30px rgba(226, 226, 152, 0.2);
-  }
-
-  73% {
-    background-color: #94d894;
-    box-shadow: 0px 0px 30px rgba(148, 216, 148, 0.2);
-  }
-
-  75% {
-    background-color: #94d894;
-    box-shadow: 0px 0px 30px rgba(148, 216, 148, 0.2);
-  }
-
-  87.5% {
-    background-color: #94d894;
-    box-shadow: 0px 0px 30px rgba(148, 216, 148, 0.2);
-  }
-
-  92.5% {
-    background-color: #94d894;
-    box-shadow: 0px 0px 30px rgba(148, 216, 148, 0.2);
-  }
-
-  98% {
-    background-color: #a498e2;
-    box-shadow: 0px 0px 30px rgba(164, 152, 226, 0.2);
+  87.5%,
+  93.75% {
+    background-color: #e29898;
+    box-shadow: 0px 0px 30px rgba(226, 152, 152, 0.2);
   }
 
   100% {
@@ -542,7 +748,7 @@ header {
   margin-top: 0;
   text-align: left;
 
-  animation-duration: 12s;
+  animation-duration: 22s;
   animation-iteration-count: infinite;
 }
 
